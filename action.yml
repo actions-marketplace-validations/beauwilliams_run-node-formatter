@@ -2,8 +2,8 @@ name: "Node Format and Lint CI"
 description: "Formats your code automatically using your choosen formatters! No configuration - it just works."
 author: "MarvinJWendt && Beau Williams"
 branding:
-  icon: award
-  color: orange
+  icon: check
+  color: green
 runs:
   using: "docker"
   image: "Dockerfile"
