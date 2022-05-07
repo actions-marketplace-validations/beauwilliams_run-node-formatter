@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Node Code Formatter
-      uses: MarvinJWendt/run-node-formatter@stable
+      uses: beauwilliams/run-node-formatter@stable
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
