@@ -18,6 +18,7 @@ git checkout $BRANCH
 echo "## Login into git..."
 git config --global user.email "formatter@1337z.ninja"
 git config --global user.name "Node Code Formatter"
+git config --global --add safe.directory /github/workspace
 
 echo "## Ignore workflow files (we may not touch them)"
 git update-index --assume-unchanged .github/workflows/*
