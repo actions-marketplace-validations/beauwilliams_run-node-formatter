@@ -32,8 +32,10 @@ if [ -f yarn.lock ]; then
     yarn config set ignore-engines true
     echo "## Installing dependencies..."
     yarn install
+    echo "## Formatting code..."
+    yarn run format --if-present
     echo "## Linting code..."
-    yarn run lint
+    yarn run lint --if-present
 else
     echo "## Detected NPM as package manager"
     echo "## Setting environment variables..."
