@@ -1,6 +1,6 @@
-name: "Node Code Formatter"
+name: "Node Format and Lint CI"
 description: "Formats your code automatically using your choosen formatters! No configuration - it just works."
-author: "MarvinJWendt"
+author: "MarvinJWendt && Beau Williams"
 branding:
   icon: award
   color: orange
