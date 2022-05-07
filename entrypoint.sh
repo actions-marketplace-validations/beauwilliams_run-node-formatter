@@ -4,6 +4,9 @@ set -e
 
 REPO_FULLNAME=$(jq -r ".repository.full_name" "$GITHUB_EVENT_PATH")
 
+echo '## Setting initial git global configurations'
+git config --global --add safe.directory /github/workspace
+
 echo "## Initializing git repo..."
 git init
 echo "### Adding git remote..."
@@ -18,7 +21,6 @@ git checkout $BRANCH
 echo "## Login into git..."
 git config --global user.email "formatter@1337z.ninja"
 git config --global user.name "Node Code Formatter"
-git config --global --add safe.directory /github/workspace
 
 echo "## Ignore workflow files (we may not touch them)"
 git update-index --assume-unchanged .github/workflows/*
