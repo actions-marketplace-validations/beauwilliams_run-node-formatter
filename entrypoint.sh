@@ -33,9 +33,21 @@ if [ -f yarn.lock ]; then
     echo "## Installing dependencies..."
     yarn install
     echo "## Formatting code..."
-    yarn run format --if-present
+    format_yarn=$(yarn run format 2>&1) && format_exit_status=$? || format_exit_status=$?
+    if [ $format_exit_status = 0 ]; then
+        echo "## Attempted to format files using yarn format script"
+        echo $format_yarn
+    else
+        echo "## Failed to format using yarn format. Check the command exists in package.json and runs locally on your machine"
+    fi
     echo "## Linting code..."
-    yarn run lint --if-present
+    lint_yarn=$(yarn run lint 2>&1) && lint_exit_status=$? || lint_exit_status=$?
+    if [ $lint_exit_status = 0 ]; then
+        echo "## Attempted to lint files using yarn lint script"
+        echo $lint_yarn
+    else
+        echo "## Failed to lint using yarn lint. Check the command exists in package.json and runs locally on your machine"
+    fi
 else
     echo "## Detected NPM as package manager"
     echo "## Setting environment variables..."
