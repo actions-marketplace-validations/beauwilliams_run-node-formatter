@@ -1,9 +1,9 @@
-name: "Node Code Lint and Formatter"
-description: "Formats your code automatically using your choosen lint and format scripts [yarn/npm]! No configuration - it just works."
+name: "Node Lint And Format Action"
+description: "Lints and formats your code automatically using your npm/yarn scripts defined in package.json! No configuration - it just works."
 author: "MarvinJWendt && Beau Williams"
 branding:
-  icon: award
-  color: orange
+  icon: check
+  color: green
 runs:
   using: "docker"
   image: "Dockerfile"
