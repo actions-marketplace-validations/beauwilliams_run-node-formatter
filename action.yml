@@ -1,5 +1,5 @@
 name: "Node Lint And Format Action"
-description: "Lints and formats your code automatically using your npm/yarn scripts defined in package.json! No configuration - it just works."
+description: "Lints and formats your code automatically using your npm/yarn scripts defined in package.json! No configuration."
 author: "MarvinJWendt && Beau Williams"
 branding:
   icon: check
