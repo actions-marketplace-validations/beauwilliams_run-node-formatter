@@ -1,5 +1,5 @@
-name: "Node Code Formatter"
-description: "Formats your code automatically using your choosen formatters! No configuration - it just works."
+name: "Node Code Lint and Formatter"
+description: "Formats your code automatically using your choosen lint and format scripts [yarn/npm]! No configuration - it just works."
 author: "MarvinJWendt && Beau Williams"
 branding:
   icon: award
