@@ -1,5 +1,5 @@
 name: "Node Lint And Format"
-description: "Lints and formats your code automatically using your npm/yarn scripts defined in package.json! Recently Updated."
+description: "Recently Updated. Lints and formats your code automatically using your npm/yarn scripts defined in package.json!"
 author: "MarvinJWendt && Beau Williams"
 branding:
   icon: award
