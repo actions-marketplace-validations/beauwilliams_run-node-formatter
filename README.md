@@ -21,17 +21,18 @@ _Never tell your users to format their code, as we do it on the fly!_
 2. Paste this code into the file:
 
 ```yml
+name: Node Lint And Format
+
 on: push
-name: Node Code Formatter
+
 jobs:
-  lint:
-    name: Node Code Formatter
-    runs-on: ubuntu-latest
-    steps:
-    - name: Node Code Formatter
-      uses: beauwilliams/run-node-formatter@stable
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    run:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: beauwilliams/run-node-formatter@latest
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 ```
 
 3. Commit the file :twisted_rightwards_arrows:
